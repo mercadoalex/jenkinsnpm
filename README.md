@@ -1,15 +1,18 @@
 # simple-node-js-react-npm-app
 #Jenkins
 
-This repository is for the
+Este es el repo del articulo que esta en mi blog en Medium en español. 
 [Build a Node.js and React app with npm](https://jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/)
-tutorial in the [Jenkins User Documentation](https://jenkins.io/doc/).
+tambien pueden revisar la documentación oficial  [Jenkins User Documentation](https://jenkins.io/doc/).
 
-The repository contains a simple Node.js and React application which generates
-a web page with the content "Welcome to React" and is accompanied by a test to
-check that the application renders satisfactorily.
+Este repositorio contiene una apicación muy sencilla en Node.JS con React  la cual genera
+una página web con el contenido "Welcome to React"  y es acompañada con ua prueba para revisar si 
+la página "renderea" se dibuja satisfactoriamente.
 
-The `jenkins` directory contains an example of the `Jenkinsfile` (i.e. Pipeline)
-you'll be creating yourself during the tutorial and the `scripts` subdirectory
-contains shell scripts with commands that are executed when Jenkins processes
-the "Test" and "Deliver" stages of your Pipeline.
+El directorio  `jenkins` contiene un ejemplo de un flujo de trabajo es decir un pipeline  o `Jenkinsfile`
+que bueno la idea es crearlo por nosotros mismo durante el tutorial.
+La sub carpeta  `scripts`  contiene los scripts en shell con los comandos que son ejecutados cuando Jenkins
+procesa las etapas "Test" y "Deliver" , (las etapas o stages se pueden llamar como ustedes gusten) , pero pues 
+es muy claro asi para que sirven cada una de estas en nuetsro pipeline. 
+
+Alex
