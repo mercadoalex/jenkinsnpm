@@ -5,7 +5,7 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-    environment {
+    environment { 
         CI = 'true'
     }
     stages {
@@ -20,6 +20,13 @@ pipeline {
                     chmod +x './jenkins/scripts/test.sh'
                     './jenkins/scripts/test.sh'
                    '''
+            }
+        }
+        stage('Deliver') { 
+            steps {
+                sh './jenkins/scripts/deliver.sh' 
+                input message: '¿Terminaste de usar el sitio Web? (Da click en "Proceed" para continuar)' 
+                sh './jenkins/scripts/kill.sh' 
             }
         }
     }
