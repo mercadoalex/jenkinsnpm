@@ -29,7 +29,10 @@ pipeline {
                    './jenkins/scripts/deliver.sh' 
                 '''
                 input message: '¿Terminaste de usar el sitio Web? (Da click en "Proceed" para continuar)' 
-                sh './jenkins/scripts/kill.sh' 
+                sh '''
+                   chmod +x './jenkins/scripts/kill.sh'
+                   './jenkins/scripts/kill.sh'
+                   '''
             }
         }
     }
