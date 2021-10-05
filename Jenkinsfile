@@ -10,6 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Construimos la app'
+        sh 'npm install'
       }
     }
 
